@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap");
+
+:root {
+    --color-body: #282a3a;
+    --1box1: #285430;
+    --1box2: #f49d1a;
+    --2box1: #863a6f;
+    --2box2: #3f3b6c;
+    --2box3: #624f82;
+    --2box4: #9f73ab;
+    --2box5: #a3c7d6;
+    --2box6: #8ec3b0;
+    --2box7: #d23369;
+    --color-latter: #fff;
+
+    font-family: "Work Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-body);
+}
+
+h1,
+h2,
+p,
+ul,
+button {
+    color: var(--color-latter);
+}
+
+ul {
+    list-style: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+/* -----header---------- */
+header {
+    max-width: 1024px;
+}
+
+.first_line {
+    width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.first_line > :nth-child(1) {
+    background-color: var(--1box1);
+    width: 100%;
+    height: 150px;
+}
+
+.first_line > :nth-child(2) {
+    background-color: var(--1box2);
+    width: 100%;
+    height: 150px;
+}
+
+.box-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+/* -----section---------- */
+section {
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.menu {
+    width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.menu > :nth-child(1) {
+    background-color: var(--2box1);
+    width: 100%;
+    height: 150px;
+}
+
+.menu > :nth-child(2) {
+    background-color: var(--2box2);
+    width: 100%;
+    height: 150px;
+}
+
+.menu > :nth-child(3) {
+    background-color: var(--2box3);
+    width: 100%;
+    height: 150px;
+}
+
+.menu > :nth-child(4) {
+    background-color: var(--2box4);
+    width: 100%;
+    height: 150px;
+}
+
+.menu > :nth-child(5) {
+    background-color: var(--2box5);
+    width: 100%;
+    height: 150px;
+}
+
+.menu > :nth-child(6) {
+    background-color: var(--2box6);
+    width: 100%;
+    height: 150px;
+}
+
+.item_menu {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 98%;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--2box7);
+    border-radius: 10px;
+}
+
+.bt {
+    background-color: var(--2box4);
+    border-radius: 10px;
+    height: 40px;
+    width: 90%;
+    border: none;
+}
+
+/* -----media 480px---------- */
+@media (min-width: 480px) {
+    .first_line > :nth-child(1) {
+        width: 49%;
+    }
+
+    .first_line > :nth-child(2) {
+        width: 49%;
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .menu {
+        width: 48%;
+    }
+
+    .content {
+        width: 48%;
+        height: 350px;
+    }
+}
+
+/* -----media 768px---------- */
+@media (min-width: 768px) {
+    .menu {
+        width: 68%;
+    }
+
+    .menu > :nth-child(1) {
+        width: 49%;
+    }
+
+    .menu > :nth-child(2) {
+        width: 49%;
+    }
+
+    .menu > :nth-child(3) {
+        width: 49%;
+    }
+
+    .menu > :nth-child(4) {
+        width: 49%;
+    }
+
+    .menu > :nth-child(5) {
+        width: 49%;
+    }
+
+    .menu > :nth-child(6) {
+        width: 49%;
+    }
+
+    .content {
+        width: 28%;
+        height: 467px;
+    }
+}
+
+/* -----media 992px---------- */
+@media (min-width: 992px) {
+    section {
+        gap: 0;
+    }
+
+    .menu {
+        width: 60%;
+    }
+
+    .menu > :nth-child(1) {
+        width: 32%;
+    }
+
+    .menu > :nth-child(2) {
+        width: 32%;
+    }
+
+    .menu > :nth-child(3) {
+        width: 32%;
+    }
+
+    .menu > :nth-child(4) {
+        width: 32%;
+    }
+
+    .menu > :nth-child(5) {
+        width: 32%;
+    }
+
+    .menu > :nth-child(6) {
+        width: 32%;
+    }
+
+    .content {
+        width: 37%;
+        height: 309px;
+    }
+}
+
+/* -----media 1100px---------- */
+@media (min-width: 1100px) {
+    .content {
+        width: 39%;
+        height: 309px;
+    }
+}
