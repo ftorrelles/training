@@ -39,6 +39,7 @@ ul {
 }
 
 main {
+    margin: 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -180,7 +181,7 @@ section {
 
     .content {
         width: 48%;
-        height: 350px;
+        height: 100vh;
     }
 }
 
